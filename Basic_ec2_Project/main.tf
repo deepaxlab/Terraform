@@ -10,3 +10,7 @@ resource "aws_instance" "Terraform" {
         Name = "Terraform"              # creates instance name to Terraform 
         }
 }
+
+output "public-ip-address" {
+  value = aws_instance.Terraform.public_ip
+}
