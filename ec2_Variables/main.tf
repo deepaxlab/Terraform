@@ -30,6 +30,9 @@ resource "aws_instance" "Terraform_Variable" {
     ami = var.ami
     instance_type = var.instance
     key_name = var.key
+    tags = {
+      Name = "Terraform_Variable"
+    }
 }
 # Provides Public IF after creating the ec2 instance
 output "public_ip" {
