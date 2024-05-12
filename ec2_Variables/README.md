@@ -1,0 +1,1 @@
+This terraform file creates EC2 instance with the input variable provided in the main.tf file. The default values are provided in the terraform file itself, which will help the larger configurations file more flexible and dynamic. 
