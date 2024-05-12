@@ -7,6 +7,6 @@ resource "aws_instance" "Terraform" {
     instance_type = "t2.micro"          # t2.micro selected
     key_name = "aws_linux"              # uses my aws_linux.pem key for log in 
     tags = { 
-        Name = "Terraform"              # Creates instance name to Terraform 
+        Name = "Terraform"              # creates instance name to Terraform 
         }
 }
